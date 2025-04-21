@@ -1,0 +1,214 @@
+:root {
+    --primary-color: #1e3d5c;
+    --secondary-color: #b8d0e8;
+    --accent-color: #2196f3;
+    --text-color: #ffffff;
+    --input-bg: rgba(255, 255, 255, 0.1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo img {
+    height: 150px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .sign-in-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: 2rem;
+  }
+  
+  .login-container {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+  }
+  
+  .login-form {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .avatar-container {
+    margin-bottom: 2rem;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .input-group {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--input-bg);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: var(--text-color);
+    font-size: 1rem;
+  }
+  
+  .input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .forgot-password {
+    text-align: center;
+  }
+  
+  .forgot-password a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .welcome-section {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .welcome-section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .welcome-section img {
+    width: 300px;
+    height: 300px;
+}
+  .bot-icon {
+    width: 150px;
+    height: 150px;
+    background-image: url('https://cdn.glitch.global/your-image-url/bot-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  
+  .menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px 0;
+    border-radius: 3px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    
+    .menu-btn {
+      display: block;
+    }
+    
+    .login-container {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .welcome-section {
+      padding: 2rem 2rem;
+    }
+  }
