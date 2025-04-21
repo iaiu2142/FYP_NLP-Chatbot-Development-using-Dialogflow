@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pharma Bot - Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <script type="module" src="home.js"></script>
+
+    <style>
+      /* Optional: Style the embedded chatbot */
+      .dialogflow-chatbot {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 350px;
+        height: 500px;
+        border: none;
+        z-index: 1000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="https://raw.githubusercontent.com/yourusername/pharma-bot/main/assets/logo.png" alt="Pharma Bot" />
+        <span>Pharma Bot</span>
+      </div>
+      <div class="nav-links">
+        <a href="#" class="nav-link active">HOME</a>
+        <a href="product.html" class="nav-link">PRODUCT</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
+        <button class="sign-in-btn">SIGN IN</button>
+      </div>
+      <button class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <main class="container">
+      <div class="categories">
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Medicines" />
+          <h2>Medicines</h2>
+        </div>
+
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="First Aid" />
+          <h2>First Aid</h2>
+        </div>
+
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1570194065650-d99fb4b8ccb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Personal Care" />
+          <h2>Personal Care</h2>
+        </div>
+      </div>
+
+      <div class="welcome-section">
+        <div class="welcome-content">
+          <h1>Welcome to Pharma Bot</h1>
+        </div>
+        <div class="welcome-image">
+          <img src="https://raw.githubusercontent.com/yourusername/pharma-bot/main/assets/bot-avatar.png" alt="Pharma Bot Welcome" />
+        </div>
+      </div>
+
+      <div class="chatbot">
+        <div class="chat-bubble">
+          <p>How can I help you?</p>
+        </div>
+        <div class="bot-avatar">
+          <img src="https://raw.githubusercontent.com/yourusername/pharma-bot/main/assets/bot-avatar.png" alt="Bot Avatar" />
+        </div>
+      </div>
+    </main>
+
+    <!-- 🔹 Dialogflow Messenger Integration -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="NLP-PharmaBot"
+      agent-id="b1945e4d-1f03-4c09-af4d-0ec2913dd10d"
+      language-code="en">
+    </df-messenger>
+    
+  </body>
+</html>
