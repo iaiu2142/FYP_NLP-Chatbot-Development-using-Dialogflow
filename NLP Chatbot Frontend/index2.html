@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pharma Bot - Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles2.css" />
+    <script type="module" src="script2.js"></script>
+    <!-- Dialogflow Messenger Script -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Logo.png" alt="Pharma Bot" />
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">HOME</a>
+        <a href="index2.html" class="nav-link">PRODUCT</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
+        <a href="index.html"><button class="sign-in-btn">SIGN IN</button></a>
+      </div>
+      <button class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+      <div class="categories">
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Medicines" />
+          <h2>Medicines</h2>
+        </div>
+        
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="First Aid" />
+          <h2>First Aid</h2>
+        </div>
+        
+        <div class="category-card">
+          <img src="Done.jpg" alt="Personal Care" />
+          <h2>Personal Care</h2>
+        </div>
+      </div>
+    </main>
+
+    <!-- Dialogflow Chatbot Widget -->
+    <df-messenger
+      intent="WELCOME"
+      chat-title="NLP-PharmaBot"
+      agent-id="b1945e4d-1f03-4c09-af4d-0ec2913dd10d"
+      language-code="en"
+    ></df-messenger>
+
+  </body>
+</html>
