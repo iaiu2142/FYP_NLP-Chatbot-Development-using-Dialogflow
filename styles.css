@@ -318,6 +318,7 @@ section {
 
 /* Hero Section */
 .hero {
+  position: relative;
   padding-top: calc(var(--header-height) + var(--space-xl));
   min-height: 80vh;
   background-image: var(--bg-primary-gradient);
@@ -325,16 +326,29 @@ section {
   display: flex;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
-
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('https://www.shutterstock.com/image-vector/abstract-blue-3d-dna-molecule-260nw-2268373363.jpg') center/cover no-repeat;
+  opacity: 0.10; /* 50% transparency */
+  z-index: 0;
+}
 .dark-theme .hero {
-  background-image: var(--bg-dark-gradient);
+  background-image:-moz-linear-gradient();
 }
 
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
   padding: var(--space-xl);
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
