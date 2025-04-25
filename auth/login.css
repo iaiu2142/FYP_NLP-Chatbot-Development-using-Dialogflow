@@ -44,7 +44,7 @@ body {
   .login-btn {
     width: 100%;
     padding: 14px;
-    background-color: #0a2e52;
+    background-color: #082746;
     color: white;
     border: none;
     border-radius: 8px;
@@ -64,7 +64,7 @@ body {
   }
   
   .forgot-password a {
-    color: #2196f3;
+    color: #081c2c;
     text-decoration: none;
   }
   
@@ -81,7 +81,7 @@ body {
   
   .welcome-section {
     flex: 1;
-    background-color: #0a2e52;
+    background-color: #082746;
     color: white;
     display: flex;
     flex-direction: column;
