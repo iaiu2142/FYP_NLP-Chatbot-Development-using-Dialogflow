@@ -44,7 +44,7 @@ body {
   .login-btn {
     width: 100%;
     padding: 14px;
-    background-color: #0b345c;
+    background-color: #0a2e52;
     color: white;
     border: none;
     border-radius: 8px;
@@ -81,7 +81,7 @@ body {
   
   .welcome-section {
     flex: 1;
-    background-color: #0b345c;
+    background-color: #0a2e52;
     color: white;
     display: flex;
     flex-direction: column;
