@@ -1374,13 +1374,3 @@ section {
     font-size: var(--font-size-2xl);
   }
 }
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-9px); }
-  100% { transform: translateY(0); }
-}
-
-df-messenger {
-  animation: float 2s ease-in-out infinite;
-}
