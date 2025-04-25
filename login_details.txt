@@ -1,0 +1,3 @@
+Database Name: pharma
+User login Credentials: username: admin
+                        password: 123
