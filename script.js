@@ -797,14 +797,5 @@ function init() {
   });
 }
 
-// Personalized welcome message
-const welcomeUser = document.getElementById("welcomeUser");
-const userEmail = localStorage.getItem("user");
-if (userEmail) {
-  welcomeUser.innerHTML = `Welcome, <strong>${userEmail}</strong>! 🎉`;
-} else {
-  window.location.href = "auth/login.html";
-}
-
 // Start the application
 document.addEventListener('DOMContentLoaded', init);
