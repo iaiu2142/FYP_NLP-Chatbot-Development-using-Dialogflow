@@ -797,5 +797,22 @@ function init() {
   });
 }
 
+// logout functionality
+const logoutBtn = document.getElementById("logoutBtn");
+
+logoutBtn.addEventListener("click", () => {
+  localStorage.removeItem("user"); // Remove saved session
+  alert("You have been logged out.");
+  window.location.href = "login.html"; // Redirect to login page
+});
+// Personalized welcome message
+const welcomeUser = document.getElementById("welcomeUser");
+const userEmail = localStorage.getItem("user");
+if (userEmail) {
+  welcomeUser.innerHTML = `Welcome, <strong>${userEmail}</strong>! 🎉`;
+} else {
+  window.location.href = "auth/login.html";
+}
+
 // Start the application
 document.addEventListener('DOMContentLoaded', init);

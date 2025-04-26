@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -35,5 +35,69 @@
   </main>
   <script src="login.js"></script>
   
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PharmaBot - Login</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <main class="container">
+    <div class="login-container">
+      <div class="login-form">
+        <div class="avatar-container">
+          <img src="Profile.png" alt="Avatar" class="avatar" />
+        </div>
+        
+        <!-- Login Form -->
+        <form id="loginForm">
+          <div class="input-group">
+            <input type="email" id="loginEmail" placeholder="Email" required />
+          </div>
+          <div class="input-group">
+            <input type="password" id="loginPassword" placeholder="Password" required />
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <div class="switch-form">
+            <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+          </div>
+          <div class="forgot-password">
+            <a href="#">Forgot your password?</a><br>
+          </div>
+        </form>
+
+        <!-- Signup Form -->
+        <form id="signupForm" class="hidden">
+          <div class="input-group">
+            <input type="text" id="signupName" placeholder="Full Name" required />
+          </div>
+          <div class="input-group">
+            <input type="email" id="signupEmail" placeholder="Email" required />
+          </div>
+          <div class="input-group">
+            <input type="password" id="signupPassword" placeholder="Password" required />
+          </div>
+          <button type="submit" class="login-btn">Sign Up</button>
+          <div class="switch-form">
+            <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="welcome-section">
+        <h1>Welcome to<br />Pharma Bot</h1>
+        <img src="Logo.png" alt="Your trusted healthcare companion available 24/7" />
+      </div>
+    </div>
+  </main>
+
+  <script src="login.js"></script>
 </body>
 </html>
