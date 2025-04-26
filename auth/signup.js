@@ -1,17 +1,25 @@
 document.getElementById('signupForm').addEventListener('submit', async (e) => {
     e.preventDefault();
 
+    alert('Hello');
+
     const username = document.getElementById('signupUsername').value.trim();
     const password = document.getElementById('signupPassword').value.trim();
+    const email = document.getElementById('signupEmail').value.trim();
 
+    console.log(username);
+    console.log(password);
+    console.log(email);
+    
     try {
         const response = await fetch('http://127.0.0.1:5000/signup', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: username, password: password })
+            body: JSON.stringify({ email: email, full_name: username, password: password })
         });
 
         const data = await response.json();
+        
 
         if (data.success) {
             alert('✅ Signup successful!');
