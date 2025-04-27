@@ -336,7 +336,7 @@ section {
   height: 100%;
   width: 100%;
   background: url('https://www.shutterstock.com/image-vector/abstract-blue-3d-dna-molecule-260nw-2268373363.jpg') center/cover no-repeat;
-  opacity: 0.10; /* 50% transparency */
+  opacity: 0.07; 
   z-index: 0;
 }
 .dark-theme .hero {
