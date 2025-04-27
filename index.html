@@ -39,6 +39,21 @@
           <button id="toggleMenu" class="icon-btn menu-btn">
             <i class="fas fa-bars"></i>
           </button>
+          <button onclick="logout()" class="logout-btn">Logout</button>
+
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const logoutBtn = document.querySelector('.logout-btn');
+              if (logoutBtn) {
+                logoutBtn.addEventListener('click', function() {
+                  alert('🔓 You have been logged out.');
+                  localStorage.removeItem('isLoggedIn');
+                  window.location.href = 'auth/login.html'; // Redirect to login page
+    });
+  }
+});
+          </script>
+        <script src="logout.js"></script>
         </div>
       </div>
       
