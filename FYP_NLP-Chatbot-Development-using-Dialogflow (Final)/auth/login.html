@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PharmaBot - Login / Sign Up</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <main class="container">
+    <div class="login-container">
+      <div class="login-form">
+        <div class="avatar-container">
+          <img src="Profile.png" alt="Avatar" class="avatar" />
+        </div>
+        
+        <!-- Login Form -->
+        
+        <form id="loginForm">
+          <div class="input-group">
+            <input type="email" id="email" placeholder="Email" required name="email"/>
+          </div>
+          <div class="input-group">
+            <input type="password" id="password" placeholder="Password" required name="password"/>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <div class="forgot-password">
+            <a href="forget_password.html">Forgot your password?</a>
+          </div>
+        </form>
+        <p style="margin: 50px 0;">Don't have an account? <a href="signup.html">Sign Up</a></p>
+      </div>
+
+      <div class="welcome-section">
+        <h1>Welcome to<br />Pharma Bot</h1>
+        <img src="Logo.png" alt="Your trusted healthcare companion available 24/7" />
+      </div>
+    </div>
+  </main>
+
+  <script src="login.js"></script>
+  <script src="signup.js"></script>
+  <script src="forget_password.js"></script>
+</body>
+</html>
