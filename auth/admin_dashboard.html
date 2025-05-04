@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - PharmaBot</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>PharmaBot Admin</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>All User Orders</h2>
+        <table id="ordersTable">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>User Email</th>
+                    <th>Medicine</th>
+                    <th>Quantity</th>
+                    <th>Order Date</th>
+                </tr>
+            </thead>
+            <tbody id="adminOrderTableBody">
+                <!-- Fetched orders will appear here -->
+            </tbody>
+            
+        </table>
+    </main>
+</body>
+</html>
+
+<!-- Admin Dashboard ka JS Code -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("http://127.0.0.1:5000/admin/orders")
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            const tableBody = document.getElementById("adminOrderTableBody");
+            data.orders.forEach(order => {
+              const row = `
+                <tr>
+                  <td>${order.order_id}</td>
+                  <td>${order.user_email}</td>
+                  <td>${order.medicine_name}</td>
+                  <td>${order.quantity}</td>
+                  <td>${order.order_date}</td>
+                </tr>`;
+              tableBody.innerHTML += row;
+            });
+          } else {
+            alert("Failed to load orders: " + data.message);
+          }
+        });
+    });
+    </script>
+    
