@@ -116,7 +116,7 @@ const productData = {
   medicine: [
     {
       id: 'm1',
-      name: 'Pain Relief Tablets',
+      name: 'Panadol',
       description: 'Fast-acting pain relief for headaches and mild pain',
       price: 8.99,
       image: 'https://images.pexels.com/photos/159211/headache-pain-pills-medication-159211.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -124,24 +124,24 @@ const productData = {
     },
     {
       id: 'm2',
-      name: 'Cold & Flu Relief',
-      description: 'Multi-symptom relief for cold and flu symptoms',
+      name: 'Ventolin',
+      description: 'Multi-symptom relief for chronic diseases',
       price: 12.99,
       image: 'https://images.pexels.com/photos/208512/pexels-photo-208512.jpeg?auto=compress&cs=tinysrgb&w=800',
       category: 'medicine'
     },
     {
       id: 'm3',
-      name: 'Allergy Relief',
-      description: '24-hour non-drowsy allergy symptom relief',
+      name: 'Augmentin',
+      description: 'Treat infections of respiratory tract, ear, sinuses, and skin',
       price: 14.50,
       image: 'https://images.pexels.com/photos/3683098/pexels-photo-3683098.jpeg?auto=compress&cs=tinysrgb&w=800',
       category: 'medicine'
     },
     {
       id: 'm4',
-      name: 'Digestive Health Tablets',
-      description: 'Relief from indigestion and heartburn',
+      name: 'Aspirin',
+      description: 'Relief to pain, fever, inflammation and migraines',
       price: 9.75,
       image: 'https://images.pexels.com/photos/6941884/pexels-photo-6941884.jpeg?auto=compress&cs=tinysrgb&w=800',
       category: 'medicine'

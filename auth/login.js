@@ -28,15 +28,6 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             alert('❌ ' + (data.message || 'Invalid credentials.'));
         }
         
-          
-        // if (data.success) {
-        //     alert('✅ Login successful!');
-        //     localStorage.setItem('isLoggedIn', 'true');
-        //     window.location.href = 'http://127.0.0.1:5500/index.html'; //
-        // } else {
-        //     alert('❌ ' + data.message);
-        // }
-        
     } catch (error) {
         console.error('Error:', error);
         alert('Something went wrong while logging in.');

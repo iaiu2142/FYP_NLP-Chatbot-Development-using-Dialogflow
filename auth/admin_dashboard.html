@@ -39,7 +39,10 @@
 <!-- Admin Dashboard ka JS Code -->
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-      fetch("http://127.0.0.1:5000/auth/admin/orders")
+      fetch("http://127.0.0.1:5000/auth/admin/orders", {
+    method: 'GET',
+    credentials: 'include'  // 🟢 This line enables session cookies to be sent
+})
         .then(res => res.json())
         .then(data => {
           if (data.success) {
