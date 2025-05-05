@@ -10,7 +10,7 @@
     <nav class="navbar">
         <h1>PharmaBot Admin</h1>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="login.html">Logout</a></li>
         </ul>
     </nav>
@@ -39,7 +39,7 @@
 <!-- Admin Dashboard ka JS Code -->
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-      fetch("http://127.0.0.1:5000/admin/orders")
+      fetch("http://127.0.0.1:5000/auth/admin/orders")
         .then(res => res.json())
         .then(data => {
           if (data.success) {
