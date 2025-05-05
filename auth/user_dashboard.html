@@ -24,6 +24,8 @@
                     <th>Medicine</th>
                     <th>Quantity</th>
                     <th>Order Date</th>
+                    <th>Delivery Location</th>
+                    <th>Order Status</th>
                 </tr>
             </thead>
             <tbody id="userOrderTableBody">
@@ -53,6 +55,10 @@
                   <td>${order.medicine_name}</td>
                   <td>${order.quantity}</td>
                   <td>${order.order_date}</td>
+                  <td>${order.location}</td>
+                  <td>${order.status}</td>
+
+                  
                 </tr>`;
               tableBody.innerHTML += row;
             });
