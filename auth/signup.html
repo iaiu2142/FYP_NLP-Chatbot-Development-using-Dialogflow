@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <title>PharmaBot - Sign Up</title>
   <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
   <main class="container">
@@ -16,13 +18,14 @@
         <!-- Signup Form -->
         <form id="signupForm">
           <div class="input-group">
-            <input type="text" id="signupUsername" placeholder="Username" required />
+            <input type="text" id="signupUsername" placeholder="Username" required name="name"/>
           </div>
           <div class="input-group">
-            <input type="email" id="signupEmail" placeholder="Email" required />
+            <input type="email" id="signupEmail" placeholder="Email" required name="email" />
           </div>
-          <div class="input-group">
-            <input type="password" id="signupPassword" placeholder="New Password" required />
+          <div class="password-wrapper">
+            <input type="password" id="signupPassword" placeholder="New Password" required name="password" />
+            <i id="togglePassword" class="fas fa-eye"></i>
           </div>
           <button type="submit" class="login-btn">Sign Up</button>
         </form>

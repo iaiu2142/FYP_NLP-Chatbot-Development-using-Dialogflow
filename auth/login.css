@@ -100,4 +100,24 @@ body {
     width: 300px;
     max-width: 200%;
   }
-  
+  .password-wrapper {
+    margin-bottom: 20px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    
+  }.password-wrapper input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    opacity: 0.2px;
+    border-radius: 8px;
+    font-size: 16px;
+
+  }
+
+  .password-wrapper i {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+  }

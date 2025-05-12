@@ -16,7 +16,7 @@ if (!email) {
 }
 
 try {
-  const response = await fetch('http://127.0.0.1:5000/reset-password', {
+  const response = await fetch('http://127.0.0.1:5000/auth/reset-password', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email: email, password: newPassword }) // ✅ Send email + password

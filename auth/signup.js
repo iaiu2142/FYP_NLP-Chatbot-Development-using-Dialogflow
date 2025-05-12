@@ -29,3 +29,17 @@ document.getElementById('signupForm').addEventListener('submit', async (e) => {
 }
 
 });
+
+const togglePassword = document.querySelector("#togglePassword");
+const password = document.querySelector("#signupPassword");
+
+togglePassword.addEventListener("click", () => {
+  // toggle the type
+  const type = password.getAttribute("type") === "password" ? "text" : "password";
+  password.setAttribute("type", type);
+  
+  // toggle the icon
+  togglePassword.classList.toggle("fa-eye");
+  togglePassword.classList.toggle("fa-eye-slash");
+});
+
